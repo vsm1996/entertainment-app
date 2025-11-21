@@ -1,0 +1,31 @@
+import { ChangeEvent, useState } from "react";
+import SearchIcon from "../icons/SearchIcon";
+import { ItemProp } from "@/utils/types";
+
+interface InputProps {
+  searchTerm: string;
+  handleChangeTerm: (searchTerm: string) => {};
+  handleFilterData: () => {};
+}
+
+const Input = ({ searchTerm, handleChangeTerm, handleFilterData }: any) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    let newTerm = e.target.value;
+    handleChangeTerm(newTerm.toLocaleLowerCase());
+    handleFilterData();
+  };
+
+  return (
+    <div className="col-start-1 flex items-center gap-400">
+      <SearchIcon />
+      <input
+        className="caret-red-500 w-full text-2 outline-none pb-200 pr-100 border-b-1 border-b-transparent focus:text-white focus:border-b-1 focus:border-b-blue-500"
+        placeholder="Search for movies of TV Series"
+        value={searchTerm}
+        onChange={(e) => handleChange(e)}
+      />
+    </div>
+  );
+};
+
+export default Input;

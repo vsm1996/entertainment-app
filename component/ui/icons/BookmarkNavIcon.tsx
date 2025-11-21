@@ -1,0 +1,22 @@
+import { Icon } from "@/utils/types";
+
+const BookmarkNavIcon = ({ fill = "#5A698F" }: Icon) => {
+  const fillColor = fill === "#FFF" ? "fill-white" : `fill-[${fill}]`;
+
+  return (
+    <svg
+      width="17"
+      height="20"
+      xmlns="http://www.w3.org/2000/svg"
+      className="group"
+    >
+      <path
+        d="M15.387 0c.202 0 .396.04.581.119.291.115.522.295.694.542.172.247.258.52.258.82v17.038c0 .3-.086.573-.258.82a1.49 1.49 0 0 1-.694.542 1.49 1.49 0 0 1-.581.106c-.423 0-.79-.141-1.098-.423L8.46 13.959l-5.83 5.605c-.317.29-.682.436-1.097.436-.202 0-.396-.04-.581-.119a1.49 1.49 0 0 1-.694-.542A1.402 1.402 0 0 1 0 18.52V1.481c0-.3.086-.573.258-.82A1.49 1.49 0 0 1 .952.119C1.137.039 1.33 0 1.533 0h13.854Z"
+        fill={fill}
+        className={`${fillColor} transition-all duration-400 ease-out group-hover:fill-red-500 active:fill-white`}
+      />
+    </svg>
+  );
+};
+
+export default BookmarkNavIcon;
