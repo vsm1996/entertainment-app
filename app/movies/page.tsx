@@ -20,7 +20,7 @@ const Movies = () => {
 
   return (
     <div className="p-200 sm:p-300 md:p-400 col-start-1 flex flex-col gap-300">
-      <Input />
+      <Input searchTerm={searchTerm} handleChangeTerm={setTerm} />
       <h1 className="text-1">Movies</h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 lg:pr-200 gap-200">
         {filteredData

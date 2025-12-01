@@ -28,15 +28,7 @@ const TVSeries = () => {
           .filter((data) => data.category === "TV Series")
           .map(
             (
-              {
-                title,
-                thumbnail,
-                year,
-                category,
-                rating,
-                isBookmarked,
-                isTrending,
-              },
+              { title, thumbnail, year, category, rating, isBookmarked },
               index
             ) => (
               <Card
