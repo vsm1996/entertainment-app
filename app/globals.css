@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blue-950: rgb(16, 20, 30);
+  --color-blue-900: rgb(22, 29, 47);
+  --color-blue-500: rgb(90, 105, 143);
+
+  --color-red-500: rgb(252, 71, 71);
+
+  --spacing-0: 0; /* 0px */
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-500: 2.5rem; /* 40px */
+  --spacing-700: 3.5rem; /* 56px */
+  --spacing-900: 4.5rem; /* 72px */
+  --spacing-1000: 5rem; /* 80px */
+}
+
+body {
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+}
+
+.text-1 {
+  font-weight: 300;
+  font-size: min(1.25rem);
+  line-height: 125%;
+  letter-spacing: -0.3px;
+
+  @media screen and (min-width: 768px) {
+    font-size: min(2rem);
+    letter-spacing: -0.5px;
+  }
+}
+
+.text-2 {
+  font-weight: 300;
+  font-size: min(1rem);
+  line-height: 125%;
+  letter-spacing: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: min(1.5rem);
+    letter-spacing: -0.5px;
+  }
+}
+
+.text-2-med {
+  font-weight: 500;
+  font-size: min(1rem);
+  line-height: 125%;
+  letter-spacing: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: min(1.5rem);
+    letter-spacing: -0.5px;
+  }
+}
+
+.text-3 {
+  font-weight: 500;
+  font-size: min(0.9375rem);
+  line-height: 125%;
+  letter-spacing: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: min(2rem);
+    letter-spacing: -0.5px;
+  }
+}
+
+.text-4 {
+  font-weight: 500;
+  font-size: min(0.875rem);
+  line-height: 125%;
+  letter-spacing: 0;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 300;
+    font-size: min(0.9375rem);
+  }
+}
+
+.text-5 {
+  font-weight: 300;
+  font-size: min(0.75rem);
+  line-height: 125%;
+
+  @media screen and (min-width: 768px) {
+    font-size: min(0.8125rem);
+  }
+}
+
+.text-6 {
+  font-weight: 300;
+  font-size: min(0.6875rem);
+  line-height: 125%;
+  letter-spacing: 0;
+}
