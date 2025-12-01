@@ -16,7 +16,7 @@ const Carousel = ({ items, className }: CarouselProps) => {
     <div className={`relative overflow-hidden w-full ${className}`}>
       <div
         ref={scrollRef}
-        className="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide"
+        className="flex gap-4 overflow-x-auto no-scrollbar scroll-smooth snap-x snap-mandatory scrollbar-hide"
       >
         {items.map((item, index) => (
           <div key={index} className="flex-shrink-0 snap-center">

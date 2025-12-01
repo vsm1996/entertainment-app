@@ -48,7 +48,7 @@ const Card = ({
       className={`${
         isTrending
           ? "grid place-content-center peer overflow-hidden rounded-(--spacing-100)"
-          : "w-full h-full flex flex-col transition-all duration-400 ease-out hover:scale-95"
+          : "w-full h-full flex flex-col items-stretch transition-all duration-400 ease-out hover:scale-95"
       } items-start gap-100`}
     >
       <div
@@ -66,7 +66,7 @@ const Card = ({
           <Image
             width={isTrending ? "470" : "280"}
             height={isTrending ? "230" : "174"}
-            className="peer"
+            className={`${!isTrending && "w-full"} peer`}
             src={thumbnail.regular!.large || thumbnail.trending!.large}
             alt={title}
           />

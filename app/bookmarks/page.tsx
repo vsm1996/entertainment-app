@@ -19,7 +19,7 @@ const Bookmarks = () => {
     : entertainmentData;
 
   return (
-    <div className="p-200 sm:p-300 md:p-400 col-start-1 flex flex-col gap-300">
+    <div className="w-full p-200 sm:p-300 md:p-400 col-start-1 flex flex-col gap-300">
       <Input searchTerm={searchTerm} handleChangeTerm={setTerm} />
 
       <h1 className="text-1">Bookmarked Movies</h1>
